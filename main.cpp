@@ -2,7 +2,11 @@
 
 int gcd(int x, int y)
 {
-  return 0;
+  int z = x % y;
+  if (z == 0)
+    return y;
+  else
+    return gcd(y, z);
 }
 
 TEST(gcdtest, normal)
