@@ -1,8 +1,8 @@
 #include <gtest/gtest.h>
 
-int gcd(int x, int y)
+unsigned int gcd(unsigned int x, unsigned int y)
 {
-  int z = x % y;
+  unsigned int z = x % y;
   if (z == 0)
     return y;
   else
